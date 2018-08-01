@@ -1,0 +1,20 @@
+{
+  "name": "Slater",
+  "version": "1.0.0",
+  "description": "Alerts me to incoming DeskPro tickets so I can meet our SLA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ECMA Mob",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.282.1",
+    "bluebird": "^3.5.1",
+    "dotenv": "^6.0.0",
+    "mysql": "^2.16.0",
+    "request": "^2.87.0",
+    "speaker": "^0.4.1",
+    "stream": "0.0.2"
+  }
+}
