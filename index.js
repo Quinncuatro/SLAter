@@ -74,6 +74,7 @@ function getTicketsFromDB() {
 			oldTicketsArray.push(rows[i].ticket_id);
 		}
 		console.log(oldTicketsArray);
+		connection.end();	
 	});
 }
 
@@ -86,7 +87,9 @@ function writeTicketToDB(ticketID) {
 	});
 	const db = Promise.promisifyAll(connection);
 	db.queryAsync(`INSERT INTO ticket_log (tech_id, ticket_id) VALUES (6, '${ticketID}')`).then(function(){
-		console.log(`Successfully wrote ticket #${ticketID} to ticket_log.`);
+		console.log(`Successfully wrote ticket #${ticketID} to ticket_log.`).then(function(){
+			connection.end();
+		});
 	});
 }
 
