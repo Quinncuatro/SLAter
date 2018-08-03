@@ -21,7 +21,9 @@ The best part is that this is really easy to set up, especially if your team is 
 
 ### Setup:
 1. Install Raspbian and Node.JS on your Pi. I used [this guide from W3 schools](https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp).
-2. [MySQL Stuff To Come - Probably In A Gist]
+2. Install MariaDB Server onto your pi using [this guide](https://howtoraspberrypi.com/mariadb-raspbian-raspberry-pi/) and then run `mysql-secure-installation` to get it configured.
+3. Create a `slater` database with a `ticket_log` table using [this gist](https://gist.github.com/Quinncuatro/2b019b3068f76c489d6eb80a4f44c020).
+4. Then, create a MySQL user named `slater` that has read/write access to the above database/table.
 3. Git clone [this project](https://github.com/Quinncuatro/SLAter.git) anywhere on your Pi. I used the /home/pi/ directory.
 4. Change directory (`cd`) into SLAter.
 5. Run the npm installer (`npm install`) to install required packages locally.
