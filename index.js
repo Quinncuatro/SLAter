@@ -9,12 +9,6 @@ var oldTicketsArray = [];
 var newTicketsArray = [];
 var ticketsForAWS = [];
 
-var techs = {
-	'3': "Mike",
-	'6': "Henry",
-	'7': "Doug"
-}
-
 function getTicketsFromAPI() {
 	oldTicketsArray.splice(0, oldTicketsArray.length);
 	newTicketsArray.splice(0, newTicketsArray.length);
@@ -24,10 +18,6 @@ function getTicketsFromAPI() {
 		url: `https://${process.env.API_ADDRESS}:443/api/tickets`,
  		qs: 
 			{ 'agent_id[]': '6' },
-			// henry - 6, mike -3, doug - 7, eric - 17, laura - 2, mo - 5, steve - 4
-	     	  	//'status[]': 'awaiting_agent' },
-			//'status': 'awaiting_user' },
-			//'is_hold': '0' },
 		headers: 
 			{ 'Postman-Token': '1d166e12-f388-42c2-b99d-6f77521d1316',
 		  	'Cache-Control': 'no-cache',
