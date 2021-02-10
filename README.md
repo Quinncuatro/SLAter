@@ -1,7 +1,7 @@
 # Christian SLAter
 #### or: How I Learned to Stop Checking Emails and Still Meet SLA's
 
-![Christian SLAter](https://i.imgur.com/DaJN57C_d.jpg?maxwidth=400&shape=thumb&fidelity=high)
+![Christian SLAter](https://i.imgur.com/UMtBPbB_d.jpg?maxwidth=400&shape=thumb&fidelity=high)
 
 I'm a web developer who hates checking emails, but our service-level agreement says that I need to respond to helpdesk tickets in my queue within 45 minutes of them being assigned.
 
