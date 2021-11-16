@@ -9,7 +9,7 @@
   "author": "ECMA Mob",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.282.1",
+    "aws-sdk": "^2.814.0",
     "bluebird": "^3.5.1",
     "dotenv": "^6.0.0",
     "mysql": "^2.16.0",
