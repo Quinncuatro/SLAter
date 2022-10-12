@@ -24,7 +24,7 @@ The best part is that this is really easy to set up, especially if your team is 
 2. Install MariaDB Server onto your pi using [this guide](https://howtoraspberrypi.com/mariadb-raspbian-raspberry-pi/) and then run `mysql-secure-installation` to get it configured.
 3. Create a `slater` database with a `ticket_log` table using [this gist](https://gist.github.com/Quinncuatro/2b019b3068f76c489d6eb80a4f44c020).
 4. Then, create a MySQL user named `slater` that has read/write access to the above database/table.
-3. Git clone [this project](https://github.com/Quinncuatro/SLAter.git) anywhere on your Pi. I used the /home/pi/ directory.
+3. Git clone [this project](https://github.com/Quinncuatro/SLAter.git) anywhere on [your Pi](https://www.interviewbit.com/blog/arduino-vs-raspberry-pi/). I used the /home/pi/ directory.
 4. Change directory (`cd`) into SLAter.
 5. Run the npm installer (`npm install`) to install required packages locally.
 6. Fill `sample.env` with the values related to your local MySQL database, your DeskPro API, and AWS account then change the file from `sample.env` to `.env`.
